@@ -1,7 +1,14 @@
 import "./styles.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addTen, subs, TimeAddVal } from "./redux/counter/action";
-
+/**
+ * Represents the main application component.
+ * 
+ * This component retrieves state values from the Redux store, dispatches actions to the store,
+ * and renders the application UI.
+ * 
+ * @returns {JSX.Element} The rendered App component.
+ */
 export default function App() {
   const numval = useSelector((state) => state.counter.counterValue);
   const AsynObj = useSelector((state) => state.counter);
